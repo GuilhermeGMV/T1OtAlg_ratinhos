@@ -7,7 +7,7 @@ def melhor_caminho(lab, n, c, l=0, p=0, m=0, memo=None):
     if chave in memo:
         return memo[chave]
 
-    p = p + lab[c][l]
+    p += lab[c][l]
 
     if c == 0 and l == n - 1:
         if p > m:
