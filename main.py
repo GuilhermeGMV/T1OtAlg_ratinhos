@@ -1,19 +1,36 @@
-def melhor_caminho(lab, n, c, l=0, p=0, m=0):
+def melhor_caminho(lab, n, c, l=0, p=0, m=0, memo=None):
+    if memo is None:
+        memo = {}
+
+    chave = (c, l, p)
+
+    if chave in memo:
+        return memo[chave]
+
     p = p + lab[c][l]
+
+    if c == 0 and l == n - 1:
+        if p > m:
+            memo[chave] = p
+            return p
+        else:
+            memo[chave] = m
+            return m
+
+    caminhos = []
 
     # ne
     if c > 0 and l < n - 1:
-        m = melhor_caminho(lab, n, c - 1, l + 1, p - 10, m)
+        caminhos.append(melhor_caminho(lab, n, c - 1, l + 1, p - 10, m, memo))
     # n
     if c > 0:
-        m = melhor_caminho(lab, n, c - 1, l, p - 20, m)
+        caminhos.append(melhor_caminho(lab, n, c - 1, l, p - 20, m, memo))
     # e
     if l < n - 1:
-        m = melhor_caminho(lab, n, c, l + 1, p - 20, m)
+        caminhos.append(melhor_caminho(lab, n, c, l + 1, p - 20, m, memo))
 
-    if c == 0 and l == n-1:
-        if m < p:
-            return p
+    m = max(caminhos, default=m)
+    memo[chave] = m
     return m
 
 
