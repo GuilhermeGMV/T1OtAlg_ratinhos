@@ -1,4 +1,4 @@
-def melhor_caminho(lab, n, c, l=0, p=0, m=0):
+def melhor_caminho(lab, n, c, l=0, p=0, m=float('-inf')):
     p = p + lab[c][l]
 
     # ne
