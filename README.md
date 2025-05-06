@@ -1,5 +1,7 @@
 # T1 Algorithm Optimization Project
 
+## 📌 Project description
+
 Project made for the Algorithm Optimization Project discipline in the Software Engineering course in PUCRS.
 
 The objective is to exercise dinamic programing by solving a problem with rats in a maze.
@@ -18,17 +20,23 @@ There is three steps described in the project:
 3. Remove the recursion and fill an array of results (to solve the problem really fast).
 
 
-### Running the project
+## 🚀 How to Run
 
 first clone the repository:
-`git clone https://github.com/GuilhermeGMV/T1OtAlg_ratinhos.git`
 
-then run the file you want (1.py, 2.py or 3.py):
-`python "the file you want to run"`
+    git clone https://github.com/GuilhermeGMV/T1OtAlg_ratinhos.git
 
-Then this message will appear: `Digite o numero do caso de teste(10,20,30,40,50,60,70):`
+Make sure you have Python 3.7+ installed then run the file you want (1.py, 2.py or 3.py):
 
-Which means: `Type the test case number(10,20,30,40,50,60,70):`
+    python the_file_you_want_to_run.py
+    
+Then this message will appear: 
+
+    Digite o numero do caso de teste(10,20,30,40,50,60,70):
+
+Which means: 
+
+    Type the test case number(10,20,30,40,50,60,70):
 
 after you type the number and press enter the algorithm will run and when it finishes it will show
 the best path possible and the amount of points made with this path.
