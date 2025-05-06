@@ -27,6 +27,7 @@ then run the file you want (1.py, 2.py or 3.py):
 `python "the file you want to run"`
 
 Then this message will appear: `Digite o numero do caso de teste(10,20,30,40,50,60,70):`
+
 Which means: `Type the test case number(10,20,30,40,50,60,70):`
 
 after you type the number and press enter the algorithm will run and when it finishes it will show
