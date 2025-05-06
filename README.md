@@ -25,6 +25,7 @@ There is three steps described in the project:
 first clone the repository:
 
     git clone https://github.com/GuilhermeGMV/T1OtAlg_ratinhos.git
+    cd T1OtAlg_ratinhos
 
 Make sure you have Python 3.7+ installed then run the file you want (1.py, 2.py or 3.py):
 
