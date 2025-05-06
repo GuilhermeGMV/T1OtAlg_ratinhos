@@ -2,11 +2,11 @@
 
 ## 📌 Project description
 
-Project made for the Algorithm Optimization Project discipline in the Software Engineering course in PUCRS.
+Project made for the Algorithm Optimization Project discipline in the Software Engineering course in [PUCRS](https://portal.pucrs.br/).
 
 The objective is to exercise dinamic programing by solving a problem with rats in a maze.
 
-The maze is always squared (n x n) and in every square there is a number that indicates the amount of food there,
+The maze is always squared (`n` x `n`) and in every square there is a number that indicates the amount of food there,
 the rats start in the bottom left corner and have to go to the top right corner, the rats can only move to 
 North(N), East(E) and Northeast(NE)  directions and each move cost 20, 20 and 10 respectively,
 the objective is to find the best path for the rats, the path which they get the most points.
@@ -39,5 +39,5 @@ Which means:
 
     Type the test case number(10,20,30,40,50,60,70):
 
-after you type the number and press enter the algorithm will run and when it finishes it will show
+after you type the number and press `enter` the algorithm will run and when it finishes it will show
 the best path possible and the amount of points made with this path.
