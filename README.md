@@ -41,3 +41,5 @@ Which means:
 
 after you type the number and press `enter` the algorithm will run and when it finishes it will show
 the best path possible and the amount of points made with this path.
+
+--
