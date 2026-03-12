@@ -8,7 +8,7 @@ mirror_to_github:
     - apk add --no-cache git
   script:
     - git remote add github https://$GITHUB_TOKEN@github.com/GuilhermeGMV/T1OtAlg_ratinhos.git
-    - git push github main
+    - git push github HEAD:$CI_COMMIT_REF_NAME
     - git push github --tags
   only:
-    - main
+    - branches
