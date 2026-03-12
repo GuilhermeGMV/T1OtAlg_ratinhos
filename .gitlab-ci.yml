@@ -1,0 +1,14 @@
+stages:
+  - mirror
+
+mirror_to_github:
+  stage: mirror
+  image: alpine:latest
+  before_script:
+    - apk add --no-cache git
+  script:
+    - git remote add github https://$GITHUB_TOKEN@github.com/GuilhermeGMV/T1OtAlg_ratinhos.git
+    - git push github main
+    - git push github --tags
+  only:
+    - main
