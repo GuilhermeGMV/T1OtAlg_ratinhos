@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-
+      - develop
 jobs:
   mirror:
     runs-on: ubuntu-latest
@@ -18,5 +18,5 @@ jobs:
       - name: Push to GitLab
         run: |
           git remote add gitlab https://oauth2:${{ secrets.GITLAB_TOKEN }}@gitlab.com/guilhermegmv-group/t1-algoritimos-ratinhos.git
-          git push gitlab main
+          git push gitlab HEAD:$CI_COMMIT_REF_NAME
           git push gitlab --tags
